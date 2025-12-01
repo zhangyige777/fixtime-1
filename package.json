@@ -4,13 +4,16 @@
   "description": "FixTime AI - CMMS系统",
   "scripts": {
     "dev": "cd frontend && npm run dev",
-    "build": "cd frontend && vite build",
+    "build": "cd frontend && npx vite build",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && npm run dev",
     "build:frontend": "cd frontend && npm run build",
     "deploy:frontend": "cd frontend && npm run deploy",
     "deploy:backend": "cd backend && npm run deploy",
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
   },
   "workspaces": [
     "frontend",
