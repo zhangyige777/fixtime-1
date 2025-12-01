@@ -90,15 +90,16 @@
    ```bash
    cd frontend
 
-   # 方式1: 通过 Wrangler
-   npm run build
-   wrangler pages deploy dist
+   # 方式1: 通过 Wrangler (手动部署)
+   npm run deploy
+   # 这会自动构建并部署到 Pages
 
-   # 方式2: 通过 Git (推荐)
+   # 方式2: 通过 Git (推荐，自动部署)
    # 1. 推送到 GitHub
    # 2. 在 Cloudflare Dashboard 连接仓库
    # 3. 设置构建命令: npm run build
    # 4. 输出目录: dist
+   # 5. 设置环境变量: VITE_API_URL=https://your-api-domain.workers.dev
    ```
 
 ### 第四阶段：配置域名（可选但推荐）

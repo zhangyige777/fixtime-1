@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "echo 'Deploy complete - Cloudflare Pages handles deployment automatically'"
+    "deploy": "npm run build && wrangler pages deploy dist"
   },
   "dependencies": {
     "react": "^18.2.0",
