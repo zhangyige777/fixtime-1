@@ -4,7 +4,7 @@
   "description": "FixTime AI - CMMS系统",
   "scripts": {
     "dev": "cd frontend && npm run dev",
-    "build": "cd frontend && bun run build",
+    "build": "cd frontend && vite build",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && npm run dev",
     "build:frontend": "cd frontend && npm run build",
